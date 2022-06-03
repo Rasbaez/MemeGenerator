@@ -22,3 +22,4 @@ function readImage() {
 }
 
 imgMeme.addEventListener('change', readImage);
+
