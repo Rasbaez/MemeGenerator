@@ -28,4 +28,25 @@
   position: relative;
   border: 1px black solid;
   background-color: white;
+
 }
+
+#fire {
+
+  background-color: rgb(255, 0, 0)
+}
+
+#water {
+
+    background-color:rgb(0, 0, 255);
+
+}
+
+#earth {
+
+
+    background-color: rgb(0, 128, 0);
+
+}
+
+
