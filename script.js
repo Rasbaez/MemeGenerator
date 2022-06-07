@@ -2,7 +2,6 @@ const userText = document.querySelector('#text-input');
 const text = document.querySelector('#meme-text');
 const memeContainer = document.querySelector('#meme-image-container');
 const inputValue = document.getElementById('meme-insert');
-// const galleryImgs = document.querySelectorAll('.gallery');
 const getImgTags = document.querySelectorAll('img');
 
 function showText() {
@@ -27,8 +26,7 @@ inputValue.addEventListener('change', readImage);
 function fireBorder() {
   const fire = '3px dashed rgb(255, 0, 0)';
   memeContainer.style.border = fire;
-  // if (memeContainer.style.border === solidBorder) {
-}
+ }
 
 function whaterBorder() {
   const water = '5px double rgb(0, 0, 255)';
