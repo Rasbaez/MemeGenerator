@@ -1,12 +1,9 @@
-const btn = document.querySelector('#btn');
 const userText = document.querySelector('#text-input');
 const text = document.querySelector('#meme-text');
 const memeContainer = document.querySelector('#meme-image-container');
-const imgMeme = document.getElementById('meme-insert');
-const btnFire = document.querySelector('#fire');
-const btnWater = document.querySelector('#water');
-const btnEarth = document.querySelector('#earth');
-const solidBorder = '1px solid black';
+const inputValue = document.getElementById('meme-insert');
+// const galleryImgs = document.querySelectorAll('.gallery');
+const getImgTags = document.querySelectorAll('img');
 
 function showText() {
   text.innerText = userText.value;
@@ -25,31 +22,30 @@ function readImage() {
   }
 }
 
-imgMeme.addEventListener('change', readImage);
+inputValue.addEventListener('change', readImage);
 
-function fireBorder(event) {
+function fireBorder() {
   const fire = '3px dashed rgb(255, 0, 0)';
-  memeContainer.style.border = fire
+  memeContainer.style.border = fire;
   // if (memeContainer.style.border === solidBorder) {
-   
-  
 }
 
 function whaterBorder() {
   const water = '5px double rgb(0, 0, 255)';
   memeContainer.style.border = water;
-  // if (memeContainer.style.border === solidBorder) {
-  //   return 
-  // // } else {
-  // //   return memeContainer.style.border = solidBorder;
-  // // }
 }
 
 function earthBorder() {
   const earth = '6px groove rgb(0, 128, 0)';
-  
-   memeContainer.style.border = earth;
-  // } else {
-  //   return memeContainer.style.border = solidBorder;
-  // }
+
+  memeContainer.style.border = earth;
+}
+
+function setImg(event) {
+  getImgTags[0].src = event.target.src;
+}
+
+for (let i = 0; i < getImgTags.length; i += 1) {
+  const img = getImgTags[i];
+  img.addEventListener('click', setImg);
 }

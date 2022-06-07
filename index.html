@@ -12,8 +12,8 @@
 <body>
 
     <input type="text" id="text-input" onkeyup="showText()" maxlength="60">
-    <input type="file" id="meme-insert" accept="image/*">
-    <button id="fire" onclick="fireBorder()" >fire</button>
+    <input type="file" id="meme-insert" accept="image/*" multiple="multiple">
+    <button id="fire" onclick="fireBorder()">fire</button>
     <button id="water" onclick='whaterBorder()'>water</button>
     <button id="earth" onclick='earthBorder()'>earth</button>
 
@@ -21,19 +21,13 @@
         <p id="meme-text"></p>
 
         <img src="" id="meme-image" width="500px" height="500px" alt="imagem do meme"></img>
-
-
     </section>
-    <!-- </form> -->
-
-
-
-
-
-
-
-
-
+    <div id="imgs">
+        <img src="./imgs/meme1.png" id='meme-1' class='gallery' width="200px"  height="200px" altt=''>
+        <img src="./imgs/meme2.png" id='meme-2' class='gallery' width="200px"  height="200px" alt="">
+        <img src="./imgs/meme3.png" id='meme-3' class='gallery' width="200px"  height="200px">
+        <img src="./imgs/meme4.png" id='meme-4' class='gallery' width="200px"  height="200px" alt="">
+    </div>
 
 
     <script src="./script.js"></script>
